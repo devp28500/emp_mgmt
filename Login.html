@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+      .inputtext{
+        width: 300px;
+        height: 30px;
+        border: none;
+        padding-left: 8px;
+      }
+      .form{
+        width: 350px;
+        margin: auto;
+        margin: 10 0 0 450px;
+        overflow: hidden;
+        padding: 75px;
+        
+    }
+    h2{
+        text-align: center;
+        padding: 10px;
+    }
+    label{
+        color: black;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 100px;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+</style>
+<script src="index.js">
+</script>
+<body style="background-color: lightblue;"> 
+    
+<ul> <h1>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="emp_details.html">Employee Details</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="Login.html">Login</a></li>
+  </ul> </h1> <br>
+  <hr>
+    <div class="form">
+        <h2>Login Form</h2>
+    <form name="myform" method="post">
+        <label for="nm">Employee Name:</label>
+        <input type="text" id="nm" name="Uname" class="inputtext" >
+       <br> <br>
+       <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pass" class="inputtext" minlength="8" required><br><br>
+  <input type="button" name="log" id="logButton" value="Submit" onclick="index()">
+
+    
+    </form>
+    </div>
+</body>
+</html>
